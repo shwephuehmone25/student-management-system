@@ -57,7 +57,7 @@
                                 <td>{{ $student->rollno }}</td>
                                 <td>{{ $student->class }}</td>
                                 <td>{{ $student->name }}</td>
-                                <td>{{ $student->DOB }}</td>
+                                <td>{{ \Carbon\Carbon::parse($student->DOB)->format('Y-m-d') }}</td>
                                 <td>{{ $student->nrc }}</td>
                                 <td>{{ $student->father_name }}</td>
                                 <td>{{ $student->address }}</td>
