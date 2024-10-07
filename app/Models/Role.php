@@ -10,4 +10,14 @@ class Role extends Model
     use HasFactory;
     
     protected $fillable = ['name'];
+
+    /**
+     * Get all roles.
+     *
+     * @return \Illuminate\Database\Eloquent\Collection
+     */
+    public static function getAllRoles()
+    {
+        return self::all();
+    }
 }
